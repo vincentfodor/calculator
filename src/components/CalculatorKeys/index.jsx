@@ -8,6 +8,12 @@ const CalculatorKeys = ({handleCalculatorButtonClick, handleCalculateButtonClick
   return (
     <div className="calculator-keys">
       <div className="calculator-keys-row">
+        <CalculatorKey label="CE" payload="clear" handleCalculatorButtonClick={handleCalculatorButtonClick} />
+        <CalculatorKey label="C" payload="clear" handleCalculatorButtonClick={handleCalculatorButtonClick} />
+        <CalculatorKey label="&#8617;" payload="back" handleCalculatorButtonClick={handleCalculatorButtonClick} />
+        <CalculatorKey label="/" payload="/" handleCalculatorButtonClick={handleCalculatorButtonClick} />
+      </div>
+      <div className="calculator-keys-row">
         <CalculatorKey label="7" payload="7" handleCalculatorButtonClick={handleCalculatorButtonClick} />
         <CalculatorKey label="8" payload="8" handleCalculatorButtonClick={handleCalculatorButtonClick} />
         <CalculatorKey label="9" payload="9" handleCalculatorButtonClick={handleCalculatorButtonClick} />
@@ -29,7 +35,7 @@ const CalculatorKeys = ({handleCalculatorButtonClick, handleCalculateButtonClick
         <CalculatorKey label="(-)" payload="-" handleCalculatorButtonClick={handleCalculatorButtonClick} />
         <CalculatorKey label="0" payload="0" handleCalculatorButtonClick={handleCalculatorButtonClick} />
         <CalculatorKey label="," payload="." handleCalculatorButtonClick={handleCalculatorButtonClick} />
-        <CalculatorKey label="=" payload="=" handleCalculatorButtonClick={handleCalculatorButtonClick} />
+        <CalculatorKey label="=" payload="calculate" handleCalculatorButtonClick={handleCalculatorButtonClick} />
       </div>
     </div>
   )

@@ -11,14 +11,26 @@ class Calculator extends Component {
   }
 
   handleCalculatorButtonClick = payload => {
-    if(payload !== '=') {
-      this.setState(prevState => ({
-        toResolve: prevState.toResolve + payload
-      }))
-    } else {
-      this.setState(prevState => ({
-        toResolve: this.calculate(prevState.toResolve)
-      }))
+    switch(payload) {
+      case 'calculate': 
+        this.setState(prevState => ({
+          toResolve: this.calculate(prevState.toResolve)
+        }))
+        break;
+      case 'back':
+        this.setState(prevState => ({
+          toResolve: prevState.toResolve.slice(0, -1)
+        }));
+        break;
+      case 'clear':
+        this.setState({
+          toResolve: ''
+        });
+        break;
+      default: 
+        this.setState(prevState => ({
+          toResolve: prevState.toResolve + payload
+        }))
     }
   }
 

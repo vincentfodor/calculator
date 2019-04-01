@@ -1,7 +1,14 @@
 html {
   margin: 0;
+  background-color: rgba(0, 0, 0, 0.03);
 }
 
 * {
   font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.app {
+  width: 500px;
+  margin: 50px auto 0 auto;
 }

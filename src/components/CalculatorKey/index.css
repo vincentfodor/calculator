@@ -1,0 +1,20 @@
+.calculator-key {
+  display: flex;
+  width: 25%;
+  padding: 2em 0;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  justify-content: center;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 0.15s ease-in-out;
+}
+
+.calculator-key:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.calculator-key-label {
+  font-size: 2em;
+  font-size: center;
+  align-self: center;
+}

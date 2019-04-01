@@ -1,0 +1,8 @@
+.calculator-keys {
+  display: flex;
+  flex-direction: column;
+}
+
+.calculator-keys-row {
+  display: flex;
+}

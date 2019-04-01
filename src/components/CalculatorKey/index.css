@@ -5,12 +5,12 @@
   border: 1px solid rgba(0, 0, 0, 0.15);
   justify-content: center;
   cursor: pointer;
-  background-color: transparent;
+  background-color: rgb(255, 255, 255);
   transition: all 0.15s ease-in-out;
 }
 
 .calculator-key:hover {
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: rgba(0, 0, 0, 0.02);
 }
 
 .calculator-key-label {

@@ -41,10 +41,6 @@ class Calculator extends Component {
       return 'Syntax Error'
     }
   }
-
-  hanleCalculateButtonClick = () => {
-
-  }
   
   render() {
     return (
